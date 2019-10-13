@@ -1,0 +1,110 @@
+body {
+  font-family: 'Sigmar One', cursive;
+  background-color: #fefad1;
+}
+
+.container {
+  width: 85%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.cols {
+  width: 45%;
+}
+
+@media (max-width: 500px) {
+  .cols {
+    width: 100%;
+  }
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  color: #cc0200;
+}
+
+h2 {
+  font-size: 1.125em;
+}
+
+img {
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.new-burger,
+.eaten {
+    position: relative;
+    padding: 5px;
+    margin: 5px 0;
+    background: #ffffff;
+}
+
+.eaten {
+  color: lightslategray;
+}
+
+.eat-burger {
+  margin: 0 auto;
+}
+  
+label {
+    font-weight: bold;
+}
+  
+.form-group {
+    margin-bottom: 5px;
+}
+input[type=text] {
+  font-size: 1em;
+  width: 50%;
+  padding: .3em;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+button[type=button], 
+button[type=submit] {
+  font-family: 'Baloo', cursive;
+  background-color: #369806;
+  font-weight: bold;
+  border: none;
+  color: white;
+  height: 34px;
+  /* padding: .75em 1em; */
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+button[type=button] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+button[type=button]:hover, 
+button[type=submit]:hover,
+button[type=button]:focus, 
+button[type=submit]:focus {
+  background-color: #1d4e04;
+}
