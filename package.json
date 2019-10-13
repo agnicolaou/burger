@@ -1,14 +1,27 @@
 {
-  "name": "Andreas",
+  "name": "burger",
   "version": "1.0.0",
-  "description": "",
-  "main": "test-node.js",
+  "description": "Eat-Da-Burger app utilizing Express, Handlebars, and MySQL",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krenaldi/burger.git"
+  },
+  "keywords": [
+    "Express",
+    "Handlebars",
+    "MySQL",
+    "Heroku"
+  ],
+  "author": "Kris Renaldi",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krenaldi/burger/issues"
+  },
+  "homepage": "https://github.com/krenaldi/burger",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
