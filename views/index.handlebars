@@ -1,0 +1,40 @@
+  <div class="container">
+    <img src="./assets/img/eatdaburger.png" class="img-fluid" alt="Responsive image">
+
+  
+  
+    <h2>Create Your Own Burger</h2>
+    <form class="create-form">
+      <div class="form-group">
+        {{!-- <label for="burger">Create Your Own Burger:</label> --}}
+        <input type="text" id="burger" name="burger_name">
+        <button type="submit">+ BURGER</button>
+      </div>
+
+    </form>
+    <div class="row">
+      <div class="cols">
+        <h2>Chow Down!</h2>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <div class="new-burger">
+          {{burger_name}}
+          <button type="button" class="eat-burger" data-id="{{id}}" data-newdevoured="{{devoured}}">
+            DEVOUR IT!
+          </button>
+        </div>
+        {{/unless}}
+        {{/each}}
+      </div>
+      <div class="cols">
+        <h2>Devoured Burgers!</h2>
+
+        {{#each burgers}}
+        {{#if devoured}}
+        <div class="eaten">{{burger_name}}</div>
+        {{/if}}
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
